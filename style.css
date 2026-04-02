@@ -1,0 +1,144 @@
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select,
+input[type="submit"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+.back {
+    position: relative;
+    cursor: default;
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+
+#description {
+    display: none;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+
+.welcome {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+@keyframes flyIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.section {
+    visibility: hidden; 
+    margin-bottom: 40px;
+}
+.section.visible {
+    visibility: visible; 
+    animation: flyIn 1s ease forwards;
+}
+.img {
+    width: 20%;
+    height: auto;
+    border-radius: 6px;
+    margin-right: 20px; 
+}
+
+.text {
+    overflow: hidden;
+    display: inline-block; 
+    width: 65%; 
+}
+
+@media (max-width: 768px) {
+    .img {
+        display: none; 
+    }
+    .text {
+        margin-left: 0; 
+    }
+}
+
+
+.hidden{
+    display: none;
+}
+
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.nav-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navb {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    flex: 1 1 auto;
+}
+
+.navb:hover {
+    background-color: #0056b3;
+}
+
+
+ul {
+    list-style-position: inside;
+}
